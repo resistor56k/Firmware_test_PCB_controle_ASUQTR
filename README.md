@@ -1,2 +1,4 @@
 # Firmware Test MCU PCB controle ASUQTR
-Codes de test pour les différentes fonctionnalités du microcontrôleur de la nouvelle version du PCB de contrôle du sous-marin ASUQTR.
+**Réalisé par Louis Lavallée**
+
+[Conception_PCB_controle_ASUQTR](https://github.com/resistor56k/Conception_PCB_controle_ASUQTR)
