@@ -8,6 +8,10 @@ Ce projet fut réalisé dans le câdre du développement continu du sous-marin a
 Les code présentés ici sont destinés à tester le bon fonctionnement du PCB de contrôle réalisé lors du projet de [conception du PCB de contrôle](https://github.com/resistor56k/Conception_PCB_controle_ASUQTR). Ce PCB a été conçu autour du STM32G474VET6, un microcontrôleur sensé convertir des signaux analogiques au format numérique par ses ADC, générer des PWM pour commander les moteurs du sous-marin, lire et commander des GPIO ainsi que communiquer via des bus UART et I2C avec le Jetson Xavier AGX et des capteurs. Deux codes ont été créés pour ce test. L'un est destiné au microcontrôleur du PCB (le STM32G474VET6) et l'autre à la carte Nucleo-F446RE (cette carte utilise le microcontrôleur STM32F446RE).
 
 ### Sous-objectifs:
+- ***Communication I2C :***\
+- ***Communication UART :***\
+- ***Lecture des ADC :***\
+- ***Génération des PWM :***\
 - 
 
 ## Documentation
