@@ -12,7 +12,8 @@ Les code présentés ici sont destinés à tester le bon fonctionnement du PCB d
 - ***Communication UART :***\
 - ***Lecture des ADC :***\
 - ***Génération des PWM :***\
-- 
+- ***Utilisation du DMA :***\
+- ***Réduction du temps d'exécution :***\
 
 ## Documentation
 **Mapping des pins du MCU avec** ***STM32CubeMX***\
