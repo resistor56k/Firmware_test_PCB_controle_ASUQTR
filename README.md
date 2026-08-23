@@ -8,8 +8,8 @@ Ce projet fut réalisé dans le câdre du développement continu du sous-marin a
 Les code présentés ici sont destinés à tester le bon fonctionnement du PCB de contrôle réalisé lors du projet de [conception du PCB de contrôle](https://github.com/resistor56k/Conception_PCB_controle_ASUQTR). Ce PCB a été conçu autour du STM32G474VET6, un microcontrôleur sensé convertir des signaux analogiques au format numérique par ses ADC, générer des PWM pour commander les moteurs du sous-marin, lire et commander des GPIO ainsi que communiquer via des bus UART et I2C avec le Jetson Xavier AGX et des capteurs. Deux codes ont été créés pour ce test. L'un est destiné au microcontrôleur du PCB (le STM32G474VET6) et l'autre à la carte Nucleo-F446RE (cette carte utilise le microcontrôleur STM32F446RE).
 
 ### Sous-objectifs:
-- ***Communication I2C :***\
-- ***Communication UART :***\
+- ***Communication I2C :*** Un bus de communication I2C a été établi entre le microcontrôleur du PCB et la carte Nuceo. Cette dernière doit remplacer le Jetson Xavier AGX avec lequel il faudra échanger les données des capteurs et les commandes des moteurs. Les tests ont été effectués avec des messages de 31 bytes (32 byte avec l'adresse de l'esclave) afin de mesurer le temps maximum pour un échange de données.\
+- ***Communication UART :*** Ce bus UART sert à communiquer avec un écran NX4024K032_011 de la marque Nextion. Il permet d'afficher les données échangées sur le bus I2C, les tensions converties par les ADC et le temps d'exécution et la fréquence de la boucle principale dans le main.c.\
 - ***Lecture des ADC :***\
 - ***Génération des PWM :***\
 - ***Utilisation du DMA :***\
