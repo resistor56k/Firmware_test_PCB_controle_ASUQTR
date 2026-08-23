@@ -10,9 +10,9 @@ Les code présentés ici sont destinés à tester le bon fonctionnement du PCB d
 ### Sous-objectifs:
 - ***Communication I2C :*** Un bus de communication I2C a été établi entre le microcontrôleur du PCB et la carte Nuceo. Cette dernière doit remplacer le Jetson Xavier AGX avec lequel il faudra échanger les données des capteurs et les commandes des moteurs. Les tests ont été effectués avec des messages de 31 bytes (32 byte avec l'adresse de l'esclave) afin de mesurer le temps maximum pour un échange de données.\
 - ***Communication UART :*** Ce bus UART sert à communiquer avec un écran NX4024K032_011 de la marque Nextion. Il permet d'afficher les données échangées sur le bus I2C, les tensions converties par les ADC et le temps d'exécution et la fréquence de la boucle principale dans le main.c. L'utilisation de l'écran Nextion permet aussi de démontrer le bon fonctionnement du bus UART.\
-- ***Lecture des ADC :***\
-- ***Génération des PWM :***\
-- ***Utilisation du DMA :***\
+- ***Lecture des ADC :*** Les tensions fournies aux ADC proviennent de potentiomètres. Une fois dans le sous-marin, ces ADC permettront de mesurer les courants consomés par les moteurs.\
+- ***Génération des PWM :*** Ces PWM sont transmis à des petits servomoteurs pour simuler le contrôle des moteurs du sous-marin. Dans ce code, les largeurs d'impulsions des PWM sont déduites des mesures de tension des ADC.\
+- ***Utilisation du DMA :*** Le DMA (Direct Memory access) a été utilisé pour la plupart des modules employés dans ce code, soit les ADC, le I2C et le UART. L'objectif est d'accélérer les échanges entre les registre et d'alléger la boucle principale du main.c afin de l'accélérer.\
 - ***Réduction du temps d'exécution :***\
 
 ## Documentation
