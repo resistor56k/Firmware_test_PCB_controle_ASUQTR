@@ -1,4 +1,4 @@
-# Firmware Test MCU PCB controle ASUQTR
+# Firmware Test MCU PCB controle - Sous-marin autonome (ASUQTR)
 **Réalisé par Louis Lavallée**
 
 ## Contexte du projet
