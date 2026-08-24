@@ -16,9 +16,9 @@ Les code présentés ici sont destinés à tester le bon fonctionnement du PCB d
 - ***Réduction du temps d'exécution :*** La boucle principale du main.c doit s'exécuter le plus rapidement possible afin d'approvisionner en données capteurs la boucle d'asservissement du sous-marin et transmettre les commandes vers les moteurs à une fréquence suffisante. Si la boucle du microcontrôleur est trop lente, celle de l'asservissement fera ses calculs avec des données périmées ou produira des commandes qui n'arriveront pas aux moteurs.\
 
 ## Documentation
-**Mapping des pins du MCU avec** ***STM32CubeMX***\
-**Programmation des registres du MCU avec** ***STM32CubeProgrammer***\
-**Programmation du MCU avec** ***STM32CubeIDE***
+**Mapping des pins des MCU avec** ***STM32CubeMX***\
+**Programmation des registres des MCU avec** ***STM32CubeProgrammer***\
+**Programmation des MCU avec** ***STM32CubeIDE***
 
 Fichier main.c du G474 du PCB: [main.c G474](main_g474.c)\
 Fichier main.c de la carte nucleo-F446RE: [main.c F446](main_f446.c)
